@@ -1,7 +1,7 @@
 // ============================================
 // gates.v — All Basic Logic Gates
 // Reshmi Aravindan Nair
-// Simulation: https://www.edaplayground.com/x/jpSZ
+// Simulation:https://www.edaplayground.com/x/ifpM
 // Source: HDLBits Practice
 // ============================================
 
