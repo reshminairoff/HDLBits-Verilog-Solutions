@@ -3,6 +3,7 @@
 // Four AND gates + Two OR gates
 // 10 inputs, 2 outputs
 // Tried BOTH ways as the problem suggests
+// Simulations: https://www.edaplayground.com/x/g65J
 // Source: HDLBits
 // Reshmi Aravindan Nair
 // ============================================
