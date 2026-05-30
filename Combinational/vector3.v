@@ -15,7 +15,7 @@ module vector3(
 );
 
     // Output the full vector as-is
-    assign outv = vec;        // ✅ correct — no [2:0] needed here
+    assign outv = vec;        // correct — no [2:0] needed here
 
     // Split into individual bits
     assign o0 = vec[0];       // position 0 → LSB (least significant)
