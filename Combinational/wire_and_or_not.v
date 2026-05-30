@@ -1,7 +1,7 @@
 // ============================================
 // wire_and_or_not.v : wire _and_or_not
 // Reshmi Aravindan Nair
-// Simulation:https: https://www.edaplayground.com/x/XSc8
+// Simulation: https://www.edaplayground.com/x/XSc8
 // Source: HDLBits Practice
 // ============================================
 module top_module (
