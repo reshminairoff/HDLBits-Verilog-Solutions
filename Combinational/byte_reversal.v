@@ -1,3 +1,9 @@
+// ============================================
+// byte_reversal.v — byte_reversal.v
+// Reshmi Aravindan Nair
+// Simulation:https: https://www.edaplayground.com/x/Ugz4
+// Source: HDLBits Practice
+// ============================================
 module top_module (
     input  [31:0] in,
     output [31:0] out
