@@ -1,7 +1,7 @@
 // ============================================
 // split_into_halfword.v: split_into_halfword
 // Reshmi Aravindan Nair
-// Simulation: 
+// Simulation: https://www.edaplayground.com/x/knBk
 // Source: HDLBits Practice
 // ============================================
 module split_into_halfword (
