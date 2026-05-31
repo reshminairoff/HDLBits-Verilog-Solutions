@@ -1,3 +1,8 @@
+// ============================================
+// tb_chip_7458.v — Testbench for chip_7458
+// Reshmi Aravindan Nair
+// ============================================
+
 `timescale 1ns/1ps
 
 module tb_chip_7458;
