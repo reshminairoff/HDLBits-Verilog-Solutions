@@ -2,7 +2,6 @@
 // vector3.v — 3-bit Vector Split
 // Input : 3-bit vector
 // Output: same vector + 3 separate 1-bit outputs
-// Source: HDLBits — Problem Statement 11
 // Simulations: https://www.edaplayground.com/x/L7G2
 // Reshmi Aravindan Nair
 // ============================================
