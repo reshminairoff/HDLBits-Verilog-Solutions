@@ -1,5 +1,7 @@
-// Code your testbench here
-// or browse Examples
+// ============================================
+// tb_byte_reversal.v — Testbench for byte_reversal
+// Reshmi Aravindan Nair
+// ============================================
 module tb_top_module;
 
     // Inputs
