@@ -8,16 +8,15 @@ This repository documents my hands-on journey through hardware description langu
 The problems are sourced primarily from HDLBits, a widely used platform for practising digital logic in Verilog, and are organized by topic for clarity and ease of review.
 
 🗂️ Repository Structure
-.
-├── Combinational/
-│   ├── Basic_Gates/          # AND, OR, NAND, NOR, XOR gate implementations
-│   ├── Byte_Reversal/        # 32-bit byte order reversal using bit manipulation
-│   ├── Chip_7458/            # Replication of the 7458 dual AND-OR-INVERT gate IC
-│   ├── Split_into_Half_word/ # 32-bit word splitter into two 16-bit half-words
-│   ├── Vector3/              # Bit vector operations and indexing
-│   ├── Vector_Concatenation/ # Multi-vector concatenation and replication
-│   └── Wire_And_Or_Not/      # Fundamental wire and logic gate drive circuits
-└── README.md
+
+Combinational/
+Basic_Gates/          # AND, OR, NAND, NOR, XOR gate implementations
+Byte_Reversal/        # 32-bit byte order reversal using bit manipulation
+Chip_7458/            # Replication of the 7458 dual AND-OR-INVERT gate IC
+Split_into_Half_word/ # 32-bit word splitter into two 16-bit half-words
+Vector3/              # Bit vector operations and indexing
+Vector_Concatenation/ # Multi-vector concatenation and replication
+Wire_And_Or_Not/      # Fundamental wire and logic gate drive circuits
 
 🔄 This repository is actively growing. New modules covering sequential logic, finite state machines, arithmetic circuits, and timing design will be added as I complete the full HDLBits curriculum.
 
