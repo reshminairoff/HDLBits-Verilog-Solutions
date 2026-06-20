@@ -6,7 +6,7 @@ This module takes a **3-bit input vector** and produces two things simultaneousl
 ```verilog
 input  wire [2:0] vec;
 output wire [2:0] outv;
-output wire       o2, o1, o0;
+output wire o2, o1, o0;
 
 assign outv = vec;
 assign o0 = vec[0];
