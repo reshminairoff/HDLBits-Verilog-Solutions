@@ -61,5 +61,8 @@ Though simple, this module reflects core HDL competencies:
 - **Reusable, parameterized testbench tasks** (`apply_and_check`) for scalable verification — a practice used in professional, larger-scale testbenches
 - Structured, boundary-aware test case design
 
+These are practical, everyday RTL skills applicable to **digital design, embedded systems, and VLSI verification roles**.
+
+## 📁 Files
 - `split_into_halfword.v` — RTL design module
 - `tb_split_into_halfword.v` — Self-checking testbench with reusable verification task
