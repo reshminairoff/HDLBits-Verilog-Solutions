@@ -57,8 +57,3 @@ Although simple in implementation, byte reversal logic demonstrates a strong und
 - Endianness — a critical, often overlooked concept in hardware-software interfacing
 - Verification methodology through self-checking testbenches
 
-This project reflects practical, interview-relevant HDL skills applicable to **VLSI, embedded systems, and digital design engineering roles**.
-
-## 📁 Files
-- `byte_reversal.v` — RTL design module
-- `tb_byte_reversal.v` — Self-checking testbench
