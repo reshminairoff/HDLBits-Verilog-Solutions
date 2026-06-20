@@ -1,1 +1,62 @@
+# Split Into Halfword (16-bit Byte Splitter) — Verilog HDL
 
+## 📌 Overview
+This module splits a **16-bit input word into two 8-bit halves** — a high byte and a low byte. It's a fundamental bit-slicing operation used wherever wide data buses need to be broken down into smaller, byte-aligned chunks for processing, storage, or transmission.
+
+```verilog
+input  wire [15:0] in;
+output wire [7:0]  out_hi;
+output wire [7:0]  out_lo;
+
+assign out_hi = in[15:8];
+assign out_lo = in[7:0];
+```
+
+## ⚙️ How It Works
+The 16-bit input is sliced directly using bit-select indexing — no arithmetic or sequential logic required, just pure combinational wiring.
+
+| Bits | Output |
+|---|---|
+| `in[15:8]` (upper byte) | `out_hi` |
+| `in[7:0]` (lower byte)  | `out_lo` |
+
+**Example:**
+```
+Input  : 16'hABCD
+out_hi : 8'hAB
+out_lo : 8'hCD
+```
+
+## ✅ Conditions Covered in Testbench
+The testbench (`tb_split_into_halfword.v`) uses a reusable `apply_and_check` task to automatically compare actual vs. expected outputs and print a clear `PASS`/`FAIL` result. It covers:
+
+- **General mixed-value input** (`ABCD`, `1234`, `DEAD`, `BEEF`) — standard byte-splitting behavior
+- **All-ones input** (`FFFF`) — upper boundary check
+- **All-zeros input** (`0000`) — lower boundary check
+- **High byte set, low byte zero** (`FF00`) — isolates upper byte extraction
+- **Low byte set, high byte zero** (`00FF`) — isolates lower byte extraction
+- **MSB-only set** (`8000`) — verifies correct bit positioning at the most significant bit
+- **LSB-only set** (`0001`) — verifies correct bit positioning at the least significant bit
+
+This gives complete coverage of boundary conditions, isolated byte behavior, and general-case correctness.
+
+## 🧪 Simulation
+Verified using Icarus Verilog / EDA Playground.
+🔗 **Live simulation:** [EDA Playground Link](https://www.edaplayground.com/x/knBk)
+
+📂 **Source reference:** HDLBits Practice
+
+## 🌍 Where Is This Used?
+Splitting a data word into byte-aligned segments is one of the most common operations in digital hardware. It appears in:
+
+- **Bus & Memory Interfaces** — breaking wide data buses into byte-addressable segments for memory access
+- **Communication Protocols** — separating header/payload bytes in packet-based data formats (UART, SPI, I2C frame handling)
+- **Data Serialization** — converting parallel data into byte-wise streams for transmission
+- **Processor Datapaths** — splitting register or instruction words into opcode/operand byte fields
+
+## 💡 Why This Matters
+Though simple, this module reflects core HDL competencies:
+- Precise **bit-slicing and bus indexing** in Verilog
+- Clean combinational design with zero redundant logic
+- **Reusable, parameterized testbench tasks** (`apply_and_check`) for scalable verification — a practice used in professional, larger-scale testbenches
+- Structured, boundary-aware test case design
