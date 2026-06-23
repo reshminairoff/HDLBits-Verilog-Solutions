@@ -23,7 +23,8 @@ The problems are sourced primarily from **HDLBits**, a widely used platform for 
 │   ├── Split_into_Half_word/  # 32-bit word splitter into two 16-bit half-words
 │   ├── Vector3/               # Bit vector operations and indexing
 │   ├── Vector_Concatenation/  # Multi-vector concatenation and replication
-│   └── Wire_And_Or_Not/       # Fundamental wire and logic gate drive circuits
+│   ├── Wire_And_Or_Not/       # Fundamental wire and logic gate drive circuits
+│   └── Multiplier_by2/        # 3-bit combinational multiplier computing P = D × 2 using case statement
 └── README.md
 ```
 
